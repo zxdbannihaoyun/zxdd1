@@ -1,0 +1,26 @@
+-- 创建分支
+1, git checkout develop
+2, git checkout -b xxxxx02
+3, git push -u origin xxxxx02
+
+-- 把文件加入暂存区
+git add *.java
+
+-- 把文件提交到本地仓库
+git commit -m "message"
+
+--- 把修改推送到服务器
+git push -u origin zhangsan
+
+生成SSH-key
+ssh-keygen -t rsa -C "zhangsan@163.com.cn"
+
+[user]
+	name = zhangsan
+	email = zhangsan@163.com.cn
+[alias]  
+      st = status
+      ci = commit
+      br = branch
+      co = checkout
+      df = diff
